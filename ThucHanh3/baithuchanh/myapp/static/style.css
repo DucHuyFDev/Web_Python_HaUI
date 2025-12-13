@@ -1,0 +1,17 @@
+h1{
+    color: red;
+    font-size: 40px;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    transition: background 0.5s;
+}
+
+button:hover{
+    background-color: green;
+    cursor: pointer
+}
