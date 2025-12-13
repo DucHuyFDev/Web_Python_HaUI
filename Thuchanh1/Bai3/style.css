@@ -1,0 +1,63 @@
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.detail{
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.image{
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+
+.image>img{
+    height:100%;
+    border-radius: 10px;
+}
+
+.detail_info{
+    float: right;
+    width: 55%;
+    height: 100%;
+    
+    box-sizing: border-box;
+}
+
+.name{
+    height: 10%;
+}
+
+p{
+    font-size: 25px;
+}
+
+.advantages{
+    height: 55%;
+}
+.advantages>ul{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.buy>button{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(150, 187, 114);
+    color: rgb(51, 48, 48);
+    border: 0;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.buy>button:hover{
+    cursor: pointer;
+    background-color: rgb(181, 85, 85);
+    color: white;
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 - Form đăng ký</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form đăng ký</h1>
+        <form action="POST">
+            <label for="name">Họ tên: </label><br>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="name">Email: </label><br>
+            <input type="text" name="email" id="email">
+            <br>
+            <label for="name">Mật khẩu: </label><br>
+            <input type="password" name="pass" id="pass">
+            <br>
+            <label for="name">Xác nhận mật khẩu: </label> <br>
+            <input type="password" name="repass" id="repass">
+            <br>
+            <button type="submit">Đăng ký</button>
+            <p id="err"></p>
+        </form>
+        
+    </div>
+    <script src="script_bai1.js"></script>
+</body>
+</html>
