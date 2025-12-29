@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành công</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Đăng ký thành công</h1>
+    <p>Tên sinh viên: {{ data.hoten }}</p>
+    <p>Mã sinh viên: {{ data.mssv }}</p>
+    <p>Khoa: {{ khoa }}</p>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang nhập liệu</title>
+</head>
+<body>
+    <h1>Trang nhập liệu</h1>
+    <form method="post" novalidate>
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td class="label">{{ form.mssv.label }}</td>
+                <td class="inp">{{ form.mssv }}</td>
+                <td class="error">{{ form.mssv.error}}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.hoten.label }}</td>
+                <td class="inp">{{ form.hoten }}</td>
+                <td class="error">{{ form.hoten.error}}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.email.label }}</td>
+                <td class="inp">{{ form.email }}</td>
+                <td class="error">{{ form.email.error}}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.khoa.label }}</td>
+                <td class="inp">{{ form.khoa }}</td>
+                <td class="error">{{ form.khoa.error}}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.maths.label }}</td>
+                <td class="inp">{{ form.maths }}</td>
+                <td class="error">{{ form.maths.error}}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.physics.label }}</td>
+                <td class="inp">{{ form.physics }}</td>
+                <td class="error">{{ form.physics.error}}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.chemistry.label }}</td>
+                <td class="inp">{{ form.chemistry }}</td>
+                <td class="error">{{ form.chemistry.error}}</td>
+            </tr>
+            
+        </table>
+        <button type="submit">Thêm sinh viên</button>
+    </form>
+</body>
+</html>

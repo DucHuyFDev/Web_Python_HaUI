@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang nhập thông tin</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Trang nhập thông tin sinh viên</h1>
+    <form method="post" novalidate>
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td class="label">{{ form.mssv.label }}</td>
+                <td>{{ form.mssv }}</td>
+                <td class="errors">{{ form.mssv.errors }}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.hoten.label }}</td>
+                <td>{{ form.hoten }}</td>
+                <td class="errors">{{ form.hoten.errors }}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.email.label }}</td>
+                <td>{{ form.email }}</td>
+                <td class="errors">{{ form.email.errors }}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.khoa.label }}</td>
+                <td>{{ form.khoa }}</td>
+                <td class="errors">{{ form.khoa.errors }}</td>
+            </tr>
+        </table>
+        <button type="submit">Thêm sinh viên</button>
+    </form>
+</body>
+</html>

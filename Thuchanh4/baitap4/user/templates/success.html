@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form thành công</title>
+</head>
+<body>
+    <h1>Đăng ký thành công</h1>
+    <p>Họ tên người khảo sát: {{ data.hoten }}</p>
+    <p>Giới tính: {{ gioitinh }}</p>
+    <p>Sở thích: {{ sothich }}</p>
+    <p>Ngày sinh: {{ data.ngaysinh }}</p>
+    {% if data.dangkynhantin %}
+        <p style="color: red">Nhớ đón xem các tin tức của chúng tôi</p>
+    {% endif %}
+</body>
+</html>

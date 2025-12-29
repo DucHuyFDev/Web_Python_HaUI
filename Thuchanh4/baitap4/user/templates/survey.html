@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang khảo sát</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Form khảo sát người dùng</h1>
+    <form method="post" novalidate>
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td class="label">{{ form.hoten.label }}</td>
+                <td class="input">{{ form.hoten }}</td>
+                <td class="errors">{{ form.hoten.errors }}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.gioitinh.label }}</td>
+                <td class="input">{{ form.gioitinh }}</td>
+                <td class="errors">{{ form.gioitinh.errors }}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.sothich.label }}</td>
+                <td class="input">{{ form.sothich }}</td>
+                <td class="errors">{{ form.sothich.errors }}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.ngaysinh.label }}</td>
+                <td class="input">{{ form.ngaysinh }}</td>
+                <td class="errors">{{ form.ngaysinh.errors }}</td>
+            </tr>
+            <tr>
+                <td class="label">{{ form.dangkynhantin.label }}</td>
+                <td class="input">{{ form.dangkynhantin }}</td>
+                <td class="errors">{{ form.dangkynhantin.errors }}</td>
+            </tr>
+        </table>
+        <button type="submit">Gửi thông tin</button>
+    </form>
+</body>
+</html>
